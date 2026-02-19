@@ -6,21 +6,21 @@
 }
 
 body {
-    font-family: Poppins;
+    font-family: Sancreek;
     line-height: 1.6;
-    background-color: #C4A484;
+    background-color: #545353;
     padding: 20px;
 }
 
 /* || Container */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 /* || Card Styling */
 .card {
-    background: #ffffff;
+    background: #fafafa;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -79,7 +79,7 @@ th {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
 }
 
 input, textarea {
@@ -88,17 +88,7 @@ input, textarea {
     border-radius: 4px;
 }
 
-button {
-    padding: 10px;
-    background-color: #89CFF0;
-    color: black;
-    border: none;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #0096FF;
-}
 
 /* || Footer */
 footer {
@@ -108,23 +98,91 @@ footer {
 
 /* || DarkMode */
 .dark-mode {
-    background-color:#222;
+    background-color:#171717;
     color:white;
 }
 
 .dark-mode .card {
-    background-color: #333;
+    background-color: #333	;
     color: white;
 }
+
 .dark-mode input,
 .dark-mode textarea {
     background-color: #444;
     color: white;
     border-color: #666;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* || Hiddenskills */
 .hidden {
+     padding-top: 10px;
+     padding-right: 20px;
+     padding-bottom: 30px;
+     padding-left: 40px;
     display: none;
 }
 
+#toggleSkills {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#skillsSection {
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* || Floating Buttons */
+button {
+    padding: 10px;
+    background-color: #6ab8fc;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+button:hover {
+    background-color: #0096FF;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+button:active {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(0px);
+
+
+
+
+
+/* || Skills Table */
+#skillsTable th,
+#skillsTable td {
+    border: none;
+    padding: 10px;
+}
+
+#skillsTable th {
+    background-color: transparent;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+#skillsTable tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+}

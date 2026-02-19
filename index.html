@@ -9,12 +9,12 @@
 
 <header>
    <h1>Personal Online CV</h1>
+ <button id="themeToggle"> Dark Mode</button>
 
 
 <header>
     <main>
         <div class="container">
-            <button id="themeToggle">Toggle Dark Mode</button>
             <section class="card">
                 </p>
                 <img src="images/Profile.jpg" alt="Profile photo" width="180px" height="px">
@@ -34,43 +34,41 @@
 
           <button id="toggleSkills">Show/Hide Skills</button> 
            
-            <section class="card" id="skillsSection">
-               <h2>Skills</h2>
+           <section class="card" id="skillsSection">
+    <h2>Skills</h2>
 
-    <ul>
-        <li>Cybersecurity Fundamentals</li>
-        <li>Networking (TCP/IP, DNS, HTTP)</li>
-        <li>Linux & Windows Administration</li>
-        <li>Web Security (XSS, SQL Injection)</li>
-        <li>Ethical Hacking & Penetration Testing</li>
-        <li>Firewall & Intrusion Detection</li>
-        <li>Cryptography Basics</li>
-        <li>Security Tools (Wireshark, Nmap)</li>
-        <li>Incident Response</li>
-        <li>Secure Coding</li>
-    </ul>
-
-    <ul>
-        <li>Web Development (for Security)
-            <ul>
-                <li>Frontend
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </li>
-                <li>Backend
-                    <ul>
-                        <li>PHP / Python (Basic)</li>
-                        <li>SQL</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-            </section>
+    <table>
+      <table id="skillsTable">
+        <tr>
+            <th>Category</th>
+            <th>Skills</th>
+        </tr>
+        <tr>
+            <td>Cybersecurity</td>
+            <td>Cybersecurity Fundamentals, Ethical Hacking & Penetration Testing, Web Security (XSS, SQL Injection), Incident Response, Firewall & Intrusion Detection</td>
+        </tr>
+        <tr>
+            <td>Networking</td>
+            <td>Networking (TCP/IP, DNS, HTTP), Cryptography Basics</td>
+        </tr>
+        <tr>
+            <td>Systems</td>
+            <td>Linux & Windows Administration, Secure Coding</td>
+        </tr>
+        <tr>
+            <td>Security Tools</td>
+            <td>Wireshark, Nmap</td>
+        </tr>
+        <tr>
+            <td>Frontend</td>
+            <td>HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+            <td>Backend</td>
+            <td>PHP, Python (Basic), SQL</td>
+        </tr>
+    </table>
+</section>
            
             <section class="card">
                 <h2>Education</h2>
