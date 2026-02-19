@@ -105,3 +105,26 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+/* || DarkMode */
+.dark-mode {
+    background-color:#222;
+    color:white;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: white;
+}
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+/* || Hiddenskills */
+.hidden {
+    display: none;
+}
+
