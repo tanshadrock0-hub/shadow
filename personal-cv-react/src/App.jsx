@@ -1,8 +1,8 @@
-import Header from "./Header";
-import About from "./About";
-import Skills from "./Skills";
-import Education from "./Education";
-import Contact from "./Contact";
+import Header from "./components/Header";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
