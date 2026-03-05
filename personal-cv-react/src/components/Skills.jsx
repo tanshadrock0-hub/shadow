@@ -1,15 +1,6 @@
 import { useState } from "react";
 
-const skills = [
-  { category: "Cybersecurity", items: "Cybersecurity Fundamentals, Ethical Hacking & Penetration Testing, Web Security (XSS, SQL Injection), Incident Response, Firewall & Intrusion Detection" },
-  { category: "Networking", items: "Networking (TCP/IP, DNS, HTTP), Cryptography Basics" },
-  { category: "Systems", items: "Linux & Windows Administration, Secure Coding" },
-  { category: "Security Tools", items: "Wireshark, Nmap" },
-  { category: "Frontend", items: "HTML, CSS, JavaScript" },
-  { category: "Backend", items: "PHP, Python (Basic), SQL" },
-];
-
-export default function Skills() {
+function Skills({ skills }) {
   const [visible, setVisible] = useState(true);
 
   return (
@@ -29,10 +20,10 @@ export default function Skills() {
               </tr>
             </thead>
             <tbody>
-              {skills.map((row) => (
-                <tr key={row.category}>
-                  <td>{row.category}</td>
-                  <td>{row.items}</td>
+              {skills.map((skill, index) => (
+                <tr key={index}>
+                  <td>{skill.category}</td>
+                  <td>{skill.items}</td>
                 </tr>
               ))}
             </tbody>
@@ -42,3 +33,5 @@ export default function Skills() {
     </>
   );
 }
+
+export default Skills;
