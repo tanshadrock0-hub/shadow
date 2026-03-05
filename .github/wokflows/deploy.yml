@@ -15,8 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: personal-cv-react   # 👈 change if folder name is different
-
+        working-directory: personal-cv-react # 👈 change if folder name is different
     steps:
       - uses: actions/checkout@v4
 
