@@ -15,7 +15,7 @@ const skills = [
 
 const education = [
   { year: "2028", program: "BS Information Technology", school: "College of Information Technology and Computing, USTP – CDO Campus" },
-  { year: "2022", program: "Senior High School", school: "Liceo de Cagayan University" },
+  { year: "2022", program: "Senior High School.", school: "Liceo de Cagayan University" },
   { year: "2020", program: "Junior High School", school: "Misamis Oriental General Comprehensive High School" },
   { year: "2016", program: "Elementary", school: "City Central School" },
   { year: "2010", program: "Kindergarten", school: "City Central School" },
