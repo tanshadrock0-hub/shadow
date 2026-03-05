@@ -24,13 +24,13 @@ function Contact() {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Your Name"
+          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="email"
-          placeholder="Your Email"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
