@@ -7,15 +7,30 @@ function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     if (!name || !email) {
       alert("Invalid! Please fill in all fields.");
       return;
     }
-    alert(`Thank you ${name}!`);
 
-    setName("");
-    setEmail("");
-    set
+    fetch("http://localhost/cv-api/process.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name: name, email: email, message: message })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.message) {
+          alert(data.message);
+        } else {
+          alert("Unexpected error occurred.");
+        }
+        setName("");
+        setEmail("");
+        setMessage("");
+      });
   }
 
   return (
@@ -35,10 +50,9 @@ function Contact() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
-          placeholder="Message "
+          placeholder="Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-         
         />
         <button type="submit">Send</button>
       </form>
